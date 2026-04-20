@@ -1,0 +1,261 @@
+:root {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: #17324d;
+  background:
+    radial-gradient(circle at top left, rgba(20, 140, 124, 0.18), transparent 32%),
+    linear-gradient(135deg, #f5fbff 0%, #edf7f3 48%, #fff9ef 100%);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  padding: 32px 18px 40px;
+}
+
+.app-layout {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 22px;
+}
+
+.hero-panel {
+  grid-column: 1 / -1;
+  padding: 16px 2px 8px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #14796b;
+}
+
+.hero-panel h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.hero-copy {
+  max-width: 760px;
+  margin: 14px 0 0;
+  font-size: 1.05rem;
+  color: #44637f;
+}
+
+.sample-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.sample-chip,
+.covered-chip,
+.status-pill {
+  border-radius: 999px;
+}
+
+.sample-chip {
+  border: 1px solid rgba(20, 121, 107, 0.18);
+  background: rgba(255, 255, 255, 0.8);
+  color: #125d56;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(23, 50, 77, 0.08);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 45px rgba(25, 52, 77, 0.09);
+  backdrop-filter: blur(12px);
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.section-heading p {
+  margin: 8px 0 0;
+  color: #56728c;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.form-grid label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+  color: #254763;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  border: 1px solid #c9dae3;
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: #fff;
+  color: #17324d;
+}
+
+.primary-button {
+  border: 0;
+  border-radius: 14px;
+  padding: 13px 18px;
+  background: linear-gradient(135deg, #14796b 0%, #0e6377 100%);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button:disabled {
+  opacity: 0.72;
+  cursor: wait;
+}
+
+.message-banner {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.error-banner {
+  background: #fff1f1;
+  color: #9d2b2b;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  margin-top: 18px;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.status-pill.success {
+  background: #dcf8ed;
+  color: #0b7356;
+}
+
+.status-pill.danger {
+  background: #ffe6e2;
+  color: #aa3c2c;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.result-grid article,
+.detail-block,
+.empty-state {
+  background: #f8fbfd;
+  border: 1px solid #e3edf2;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.meta-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #678199;
+}
+
+.detail-block {
+  margin-top: 14px;
+}
+
+.detail-block p {
+  margin: 0;
+}
+
+.covered-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.covered-chip {
+  background: #e9f6ff;
+  color: #225b83;
+  padding: 8px 12px;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.covered-chip.muted {
+  background: #f1f3f5;
+  color: #697a88;
+}
+
+.empty-state {
+  margin-top: 18px;
+  color: #597287;
+}
+
+@media (max-width: 860px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 18px 12px 28px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+}
