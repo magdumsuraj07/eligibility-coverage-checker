@@ -1,4 +1,4 @@
-# API Specification
+﻿# API Specification
 
 ## Endpoint
 `POST /check-eligibility`
@@ -7,8 +7,8 @@
 
 ```json
 {
-  "patientId": "P1001",
-  "insuranceProvider": "Aetna",
+  "patientId": "IN1001",
+  "insuranceProvider": "Star Health",
   "serviceType": "Consultation"
 }
 ```
@@ -17,10 +17,15 @@
 
 ```json
 {
+  "patientId": "IN1001",
+  "patientName": "Aarav Sharma",
+  "insuranceProvider": "Star Health",
+  "serviceType": "Consultation",
+  "coveredServices": ["Consultation", "Lab Test", "MRI Scan", "Surgery"],
   "eligible": true,
   "coverageStatus": "Active",
   "coverageDetails": "Consultation is covered",
-  "copayEstimate": 30
+  "copayEstimate": 300
 }
 ```
 
@@ -37,9 +42,14 @@
 
 ```json
 {
+  "patientId": "IN1002",
+  "patientName": "Diya Nair",
+  "insuranceProvider": "Niva Bupa",
+  "serviceType": "MRI Scan",
+  "coveredServices": ["Consultation", "Lab Test", "Surgery", "Maternity"],
   "eligible": false,
   "coverageStatus": "Active",
-  "coverageDetails": "Surgery is not covered for this plan",
+  "coverageDetails": "MRI Scan is not covered for this plan",
   "copayEstimate": null
 }
 ```
