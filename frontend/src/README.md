@@ -1,4 +1,26 @@
-# Frontend Source Placeholder
+# Frontend (React + Tailwind)
 
-Use this folder if you later split UI code into modules/components.
-For this 2-hour demo, static files are in `frontend/public`.
+## Folder Structure
+
+```text
+src/
++- components/
+¦  +- EligibilityForm.jsx
+¦  +- ResultCard.jsx
+¦  +- Loader.jsx
+¦  +- ErrorMessage.jsx
++- constants/
+¦  +- options.js
++- services/
+¦  +- eligibilityApi.js
++- App.jsx
++- main.jsx
++- index.css
+```
+
+## Responsibilities
+
+- `App.jsx`: state management (`formData`, `loading`, `result`, `error`) and submit flow.
+- `components/*`: presentational UI components.
+- `services/eligibilityApi.js`: API integration (`POST /check-eligibility`).
+- `constants/options.js`: form option lists.

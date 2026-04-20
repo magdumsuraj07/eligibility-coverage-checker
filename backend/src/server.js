@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const fs = require("fs");
 const eligibilityRouter = require("./routes/eligibility");
 
 const app = express();
@@ -11,8 +12,14 @@ app.use(express.json());
 
 app.use("/check-eligibility", eligibilityRouter);
 
-const frontendPath = path.join(__dirname, "../../frontend/public");
-app.use(express.static(frontendPath));
+const frontendBuildPath = path.join(__dirname, "../../frontend/dist");
+if (fs.existsSync(frontendBuildPath)) {
+  app.use(express.static(frontendBuildPath));
+
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(frontendBuildPath, "index.html"));
+  });
+}
 
 app.get("/health", (req, res) => {
   res.json({ status: "ok" });
