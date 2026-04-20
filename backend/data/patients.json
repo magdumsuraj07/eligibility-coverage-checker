@@ -1,0 +1,74 @@
+[
+  {
+    "patientId": "IN1001",
+    "name": "Aarav Sharma",
+    "insuranceProvider": "Star Health",
+    "active": true
+  },
+  {
+    "patientId": "IN1002",
+    "name": "Diya Nair",
+    "insuranceProvider": "Niva Bupa",
+    "active": true
+  },
+  {
+    "patientId": "IN1003",
+    "name": "Rohan Mehta",
+    "insuranceProvider": "HDFC ERGO",
+    "active": true
+  },
+  {
+    "patientId": "IN1004",
+    "name": "Ananya Iyer",
+    "insuranceProvider": "ICICI Lombard",
+    "active": false
+  },
+  {
+    "patientId": "IN1005",
+    "name": "Vikram Singh",
+    "insuranceProvider": "Care Health",
+    "active": true
+  },
+  {
+    "patientId": "IN1006",
+    "name": "Sneha Kulkarni",
+    "insuranceProvider": "SBI General",
+    "active": true
+  },
+  {
+    "patientId": "IN1007",
+    "name": "Arjun Reddy",
+    "insuranceProvider": "Star Health",
+    "active": true
+  },
+  {
+    "patientId": "IN1008",
+    "name": "Ishita Bose",
+    "insuranceProvider": "Niva Bupa",
+    "active": false
+  },
+  {
+    "patientId": "IN1009",
+    "name": "Kabir Verma",
+    "insuranceProvider": "HDFC ERGO",
+    "active": true
+  },
+  {
+    "patientId": "IN1010",
+    "name": "Meera Joshi",
+    "insuranceProvider": "ICICI Lombard",
+    "active": true
+  },
+  {
+    "patientId": "IN1011",
+    "name": "Pranav Desai",
+    "insuranceProvider": "Care Health",
+    "active": true
+  },
+  {
+    "patientId": "IN1012",
+    "name": "Tanvi Kapoor",
+    "insuranceProvider": "SBI General",
+    "active": false
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "Star Health": {
+      "services": {
+        "Consultation": { "covered": true, "copay": 300 },
+        "Lab Test": { "covered": true, "copay": 250 },
+        "MRI Scan": { "covered": true, "copay": 1200 },
+        "Surgery": { "covered": true, "copay": 5000 },
+        "Dental": { "covered": false, "copay": null }
+      }
+    },
+    "Niva Bupa": {
+      "services": {
+        "Consultation": { "covered": true, "copay": 350 },
+        "Lab Test": { "covered": true, "copay": 300 },
+        "MRI Scan": { "covered": false, "copay": null },
+        "Surgery": { "covered": true, "copay": 4500 },
+        "Maternity": { "covered": true, "copay": 6000 }
+      }
+    },
+    "HDFC ERGO": {
+      "services": {
+        "Consultation": { "covered": true, "copay": 400 },
+        "Lab Test": { "covered": true, "copay": 350 },
+        "CT Scan": { "covered": true, "copay": 1500 },
+        "Surgery": { "covered": true, "copay": 5500 },
+        "Dental": { "covered": false, "copay": null }
+      }
+    },
+    "ICICI Lombard": {
+      "services": {
+        "Consultation": { "covered": true, "copay": 300 },
+        "Lab Test": { "covered": true, "copay": 275 },
+        "X-Ray": { "covered": true, "copay": 700 },
+        "Surgery": { "covered": false, "copay": null },
+        "Maternity": { "covered": false, "copay": null }
+      }
+    },
+    "Care Health": {
+      "services": {
+        "Consultation": { "covered": true, "copay": 320 },
+        "Lab Test": { "covered": true, "copay": 280 },
+        "MRI Scan": { "covered": true, "copay": 1100 },
+        "Surgery": { "covered": true, "copay": 5200 },
+        "Ayurveda": { "covered": false, "copay": null }
+      }
+    },
+    "SBI General": {
+      "services": {
+        "Consultation": { "covered": true, "copay": 280 },
+        "Lab Test": { "covered": true, "copay": 240 },
+        "X-Ray": { "covered": true, "copay": 650 },
+        "Surgery": { "covered": true, "copay": 4800 },
+        "Dental": { "covered": false, "copay": null }
+      }
+    }
+  }
+}
